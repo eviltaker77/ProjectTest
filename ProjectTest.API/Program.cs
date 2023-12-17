@@ -17,7 +17,7 @@ app.MapGet("/", () =>
 app.MapPost("/", () =>
 {
     app.Logger.LogInformation("Initial Home Post");
-    return "POST - Net 6 Running ...15092023-v1.0.0 CI/CD in AKS v1.0.0 POLYGLOT";
+    return "POST - Net 6 Running ...17122023-v1.0.0 CI/CD in AKS v1.0.0 POLYGLOT";
 });
 
 //app.Run($"http://0.0.0.0:{port}");
