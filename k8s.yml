@@ -16,10 +16,12 @@ spec:
     spec:
       containers:
       - name: service-polyglot
-        image: eviltaker77/devops-jenkins:latest
+        image: crpolyglotlzo.azurecr.io/appdeposit:latest
         ports:
         - containerPort: 80 #change port value 8080 on microservice development
         imagePullPolicy: Always
+        imagePullSecrets:
+        - name: polyglot.com
 ---
 kind: Service
 apiVersion: v1
